@@ -293,6 +293,8 @@ apps:
       bin/app-service-configurable -cp -r -s
       -confdir $SNAP_DATA/config/app-service-configurable/res
       -profile rules-engine
+    command-chain:
+          - bin/app-service-config-env-var.sh
     daemon: simple
     environment:
       Binding_PublishTopic: events

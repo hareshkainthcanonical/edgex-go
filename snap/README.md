@@ -140,6 +140,20 @@ $ sudo snap set edgexfoundry security-secret-store=off
 ```
 **Note** - Kong is currently not supported in the snap when installed on an arm64-based device, so it will be disabled on install.
 
+### App Service Configurable Environment Variables
+
+Change the default duration of app-service-configurable service by using the following command:
+
+```bash
+$ sudo snap set edgexfoundry app-service-config-startup-duration=30
+```
+
+Change the default interval of app-service-configurable service by using the following command:
+
+```bash
+$ sudo snap set edgexfoundry app-service-config-startup-interval=1
+```
+
 ## Limitations
 
 [See the GitHub issues with label snap for current issues.](https://github.com/edgexfoundry/edgex-go/issues?q=is%3Aopen+is%3Aissue+label%3Asnap)
